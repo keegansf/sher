@@ -1,11 +1,12 @@
 .header {
   height: 70px;
-  width: 100%;
+  width: 92vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 25px;
-  margin-top: 20px;
+  padding: 10px 60px;
+  background: #eff2f8;
 
   .logo-container {
     height: 100%;
@@ -22,7 +23,8 @@
     justify-content: flex-end;
 
     .option {
-      padding: 10px 15px;
+      margin: 10px 15px;
+      cursor: pointer;
     }
   }
 }

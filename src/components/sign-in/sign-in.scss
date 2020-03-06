@@ -1,0 +1,62 @@
+.sign-in {
+  width: 30vw;
+}
+
+.form-title {
+  font-family: Times New Roman;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  letter-spacing: 0.015em;
+  color: #636363;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 0.1em;
+}
+
+.form-sub-title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 106.19%;
+  letter-spacing: 0.015em;
+  color: #888888;
+}
+
+.form-wrapper {
+  display: flex;
+  flex-flow: column;
+  margin-top: 2em;
+}
+
+.form-label {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.08em;
+  color: #777777;
+  text-transform: uppercase;
+}
+
+.form-input {
+  border: solid 1.3px #868686;
+  border-radius: 4px;
+  padding: 0.3em;
+  width: 20vw;
+  margin: 1em 0 1.5em 0;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.03em;
+}
+
+.button-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 21vw;
+}

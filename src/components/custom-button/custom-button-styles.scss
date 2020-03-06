@@ -1,0 +1,30 @@
+.custom-button {
+  border: none;
+  width: 10vw;
+  padding: 0.5em;
+  text-transform: uppercase;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  letter-spacing: 0.1em;
+  color: #ffffff;
+  background: #436195;
+  border-radius: 4px;
+  margin: 1em 0;
+  cursor: pointer;
+
+  &:hover {
+    transition: 0.3s ease;
+    background: #2d4368;
+  }
+
+  &.google-sign-in {
+    background-color: #4285f4;
+
+    &:hover {
+      transition: 0.3s ease;
+      background-color: #357ae8;
+    }
+  }
+}
