@@ -20,13 +20,14 @@ class SignIn extends React.Component {
     this.setState({ email: "", password: "" });
   };
 
-  handeChange = event => {
+  handleChange = event => {
     const { value, name } = event.target;
 
     this.setState({ [name]: value });
   };
 
   render() {
+    const { email, password } = this.state;
     return (
       <div className="sign-in">
         <h2 className="form-title">Sign In</h2>
@@ -41,8 +42,8 @@ class SignIn extends React.Component {
             className="form-input"
             type="email"
             name="email"
-            onChange={this.handeChange}
-            value={this.state.email}
+            onChange={this.handleChange}
+            value={email}
             required
           />
           <label className="form-label">Password</label>
@@ -51,8 +52,8 @@ class SignIn extends React.Component {
             className="form-input"
             type="password"
             name="password"
-            value={this.state.password}
-            onChange={this.handeChange}
+            value={password}
+            onChange={this.handleChange}
             required
           />
           <div className="button-wrapper">

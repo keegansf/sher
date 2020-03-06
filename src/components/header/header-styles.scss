@@ -1,11 +1,10 @@
 .header {
-  height: 70px;
-  width: 92vw;
+  height: 10vh;
+  width: 100vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 25px;
-  padding: 10px 60px;
   background: #eff2f8;
 
   .logo-container {
@@ -13,6 +12,7 @@
     width: 70px;
     display: flex;
     align-items: center;
+    padding-left: 10vw;
   }
 
   .options-container {
@@ -21,6 +21,7 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    padding-right: 18vw;
 
     .option {
       margin: 10px 15px;
