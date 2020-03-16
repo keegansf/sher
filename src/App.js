@@ -16,18 +16,20 @@ class App extends React.Component {
   unsubscribeFromAuth = null;
 
   componentDidMount() {
+    const { setCurrentUser } = this.props;
+
     this.unsubscribeFromAuth = auth.onAuthStateChanged(async userAuth => {
       if (userAuth) {
-        const userRef = createUserProfileDocument(userAuth);
+        const userRef = await createUserProfileDocument(userAuth);
 
         userRef.onSnapshot(snapShot => {
-          this.props.setCurrentUser({
+          setCurrentUser({
             id: snapShot.id,
             ...snapShot.data()
           });
         });
       }
-      this.props.setCurrentUser(userAuth);
+      setCurrentUser(userAuth);
     });
   }
 
@@ -50,7 +52,7 @@ class App extends React.Component {
 }
 
 const mapDispatchToProps = dispatch => ({
-  setCurrentUser: user => setCurrentUser(user)
+  setCurrentUser: user => dispatch(setCurrentUser(user))
 });
 
-export default connect(mapDispatchToProps)(App);
+export default connect(null, mapDispatchToProps)(App);
