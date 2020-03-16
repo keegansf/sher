@@ -1,6 +1,6 @@
 .header {
   height: 10vh;
-  width: 100vw;
+  width: fit-content;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -22,9 +22,10 @@
     align-items: center;
     justify-content: flex-end;
     padding-right: 8vw;
+    padding-left: 58vw;
 
     .option {
-      margin: 10px 15px;
+      margin: 10px 10px;
       cursor: pointer;
     }
   }
